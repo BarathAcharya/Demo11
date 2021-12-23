@@ -61,7 +61,8 @@ body{
     }
     /* animate */
 
-
+    
+   
     #wraaper {
         
         background: #f1f8fc;
@@ -69,7 +70,7 @@ body{
       }
     @keyframes mymove {
         from {background-color: #f1f8fc;}
-        to {background-color: #46ddb0;}
+        to {background-color: #f3d468;}
       }
       .backtotop{
           position:fixed;
@@ -80,6 +81,7 @@ body{
           background-color:#f16821;
           border-color:#f16821;
       }
+      
       .leFadeIn span { animation-name: leFadeIn }
 @keyframes leFadeIn {
     from { opacity: 0 }
@@ -94,3 +96,35 @@ body{
     }
     to { opacity: 1 }
 }
+
+.swiper {
+    width: 420px;
+    height: 600px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+   
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

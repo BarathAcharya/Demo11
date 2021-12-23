@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Acharyas | TemplateBy-Bharath</title>
+    <title>E-Trends | TemplateBy-Bharath</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +14,12 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.css' />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+
 </head>
 
 <body>
@@ -21,7 +27,7 @@
         <main id="wraaper">
     <nav class="navbar navbar-expand-md text-end ">
         <div class="container">
-            <a class="navbar-brand" href="#">Acharya's</a>
+            <a class="navbar-brand" href="#">E-Trends</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -53,7 +59,23 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                <a name="" id="" class="btn btn-primary mt-3" href="#" role="button">Read More</a></div>
                 
-                <div class="col-md-6"><img src="images/main.PNG" alt="" class="cssanimation sequence rotateXIn"></div>
+                <div class="col-md-6 " id="slimg"><!-- Swiper -->
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/main.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/w2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/m1.png" />
+                        </div>
+                       
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -78,6 +100,23 @@
 </div>
     </section>
 <a href="#" class="backtotop"><i class="fas fa-level-up-alt fa-2x "></i></a>
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 40,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+ </script>
     <!-- end navigation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
    <script type="text/javascript" src="js/cssanimation-gsap.js"></script>
